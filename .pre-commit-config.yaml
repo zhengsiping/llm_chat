@@ -1,0 +1,16 @@
+fail_fast: true
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.2.0
+  hooks:
+    - id: check-ast   # checks Python syntax
+    - id: check-merge-conflict  # checks for no merge conflict strings
+    - id: mixed-line-ending  # normalizes line endings
+    - id: no-commit-to-branch  # prevents committing to main
+
+- repo: https://github.com/psf/black
+  rev: 22.6.0
+  hooks:
+  - id: black-jupyter
+      
