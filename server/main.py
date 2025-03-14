@@ -17,6 +17,7 @@ origins = [
     "http://localhost:5174",
     "http://localhost:3000",  # React/Vue/Angular development
     "http://118.178.91.36/",     # Allow specific domain
+    "https://118.178.91.36/",     # Allow specific domain
     "*",  # Allow all origins (not recommended for production)
 ]
 
