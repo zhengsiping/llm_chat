@@ -16,7 +16,7 @@ app = FastAPI()
 origins = [
     "http://localhost:5174",
     "http://localhost:3000",  # React/Vue/Angular development
-    "https://example.com",     # Allow specific domain
+    "http://118.178.91.36/",     # Allow specific domain
     "*",  # Allow all origins (not recommended for production)
 ]
 
