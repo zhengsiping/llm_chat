@@ -8,7 +8,7 @@ from server.models.request import QueryRequest
 router = APIRouter()
 
 
-@router.post("/query")
+@router.post("/api/query")
 def process_query(request: QueryRequest):
     print("User query:", request.user_query)
     ds = index_doc(["雁荡山瞎扯信息.txt"], region=os.environ["Region"])

@@ -7,7 +7,7 @@ import os
 
 from utils.constants import Region
 
-os.environ["Region"] = Region.US
+# os.environ["Region"] = Region.US
 # os.environ["Region"] = Region.CHINA
 
 print("Region set to:", os.environ["Region"])

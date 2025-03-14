@@ -20,7 +20,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-@router.post("/upload-wav")
+@router.post("/api/upload-wav")
 async def upload_wav(file: UploadFile = File(...)):
     """
     Uploads a WAV file and returns it as a response.
